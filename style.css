@@ -1,0 +1,435 @@
+/* шрифты */
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* ГЛАВНАЯ */
+.body-home {
+    background-color: #AAD5FF;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.main__part {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+}
+/* right side */
+.right__side {
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    justify-content: center;
+    position: relative; 
+}
+
+.navbar {
+    padding: 0;
+    position: absolute; 
+    top: 30px; 
+    right: 20px; 
+}
+
+.nav__menu {
+    list-style: none;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.nav__link {
+    font-family: 'Geist';
+    color: #FFED4C;
+    text-decoration: none;
+    font-size: 30pt;
+}
+
+.nav__link:hover {
+    cursor: pointer;
+    color: #FFFFFF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.band__name {
+    font-family: 'Staatliches';
+    font-size: 80pt; 
+    color: #000000; 
+    margin: 40px 0 20px 0; 
+    font-weight: bold;
+    line-height: 0.8;
+    text-align: center;
+    width: 100%;
+    padding-right: 40px;
+}
+
+.text__under-name {
+    font-family: 'Bagel Fat One';
+    font-size: 24pt; 
+    color: #000000; 
+    line-height: 1.3; 
+    text-align: center;
+    margin: 30px 0 0 0; 
+    width: 100%;
+    max-width: 100%;
+}
+
+/* left side */
+
+.left__side {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 0; 
+}
+
+.home__photo {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+/* МАГАЗИН */
+.body-store {
+    background-color: #EDF1F6;
+    margin: 0;
+    padding: 40px;
+}
+
+h2 {
+    font-family: 'Staatliches';
+    color: #888;
+    font-size: 80px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+header {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.logo {
+    width: 40px;
+    height: auto;
+}
+
+.logo:hover {
+    transform: scale(1.15);
+    filter: brightness(1.2);
+}
+
+.album-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 30px;
+}
+
+.album {
+    text-align: center;
+    background-color: #e8ebf1;
+    padding: 20px;
+    border-radius: 20px;
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.album:hover {
+    transform: translateY(-5px);
+}
+
+.album img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+    margin-bottom: 25px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.album-title {
+    font-family: "Staatliches";
+    font-weight: bold;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+.buy-btn {
+    font-family: "IBM Plex Sans";
+    background-color: #dcdcdc;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.buy-btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Анимация при добавлении в корзину */
+.added {
+    background-color: #7cbb7e !important;
+    color: #fff !important;
+    transform: scale(1.05);
+}
+
+.added::after {
+    content: " ✔";
+}
+
+/* КОРЗИНА */
+
+.body-cart {
+    background-color: #EDF1F6;
+    margin: 0;
+    padding: 40px;
+}
+
+.cart-logo:hover {
+    transform: scale(1.15);
+    filter: brightness(1.2);
+}
+
+.cart-logo {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  width: 70px;
+  height: 70px;
+}
+
+.h1-cart {
+  text-align: center;
+  font-size: 56px;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+}
+
+.cart-container {
+  width: 80%;
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: #f5f7fb;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.cart-item img {
+  width: 75px;
+  height: 75px;
+  border-radius: 10px;
+}
+
+.item-info {
+  flex: 1;
+  margin-left: 15px;
+}
+
+.item-info .title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.item-info .pieces {
+  color: #666;
+  font-size: 14px;
+}
+
+button.plus,
+button.minus {
+  background-color: #ddd;
+  border: none;
+  border-radius: 5px;
+  padding: 4px 10px;
+  margin: 0 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button.plus:hover,
+button.minus:hover {
+  background-color: #bbb;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.summary {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.summary p {
+  margin: 10px 0;
+}
+
+#payment-btn {
+  margin-top: 20px;
+  background-color: #111;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#payment-btn:hover {
+  background-color: #333;
+  transform: scale(1.05);
+}
+
+/* О СЕБЕ */
+
+.body-about {
+  margin: 0;
+  background-color: #9CD1FF;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.piano-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: auto;
+  z-index: 0;
+  animation: slideKeys 15s linear infinite;
+  opacity: 0.9;
+}
+
+.h1-about {
+  font-family: 'Bagel Fat One', cursive;
+  color: #251D16;
+  font-size: 64px;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: -10px;
+  z-index: 2;
+  animation: fadeInDown 1.5s ease forwards;
+}
+
+.info-container {
+  background-color: #6FB3FF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 1100px;
+  border-radius: 10px;
+  margin-top: 40px;
+  padding: 40px 60px;
+  box-sizing: border-box;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+  animation: fadeInUp 2s ease forwards;
+  
+}
+
+
+.text-box-info {
+  color: #251D16;
+  font-size: 18px;
+  line-height: 1.6;
+  width: 60%;
+  text-align: justify;
+  animation: textAppear 2.5s ease forwards;
+}
+
+.about-photo {
+  width: 35%;
+  border-radius: 20px;
+  object-fit: cover;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.about-photo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes textAppear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideKeys {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50%);
+  }
+}
+
+
+@media (max-width: 900px) {
+  .info-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-box-info {
+    width: 100%;
+  }
+
+  .about-photo {
+    width: 80%;
+    margin-top: 20px;
+  }
+}

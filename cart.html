@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="body-cart">
+
+    <img src="./Group 17.png" alt="Cart logo" class="cart-logo">
+
+    <h1 class="h1-cart">CART</h1>
+
+    <div class="cart-container">
+        <!-- Первый альбом -->
+        <div class="cart-item">
+            <img src="./image 4.png" alt="Album 1">
+            <div class="item-info">
+                <p class="title">#000000 & #FFFFFF (No DJ Version)</p>
+                <p class="pieces">Кол-во: 
+                    <button class="minus">−</button>
+                    <span class="quantity">1</span>
+                    <button class="plus">+</button>
+                </p>
+            </div>
+            <p class="price" data-price="50.00">$50.00</p>
+        </div>
+
+        <!-- Второй альбом -->
+        <div class="cart-item">
+            <img src="./image 1.png" alt="Album 2">
+            <div class="item-info">
+                <p class="title">Chip Chrome & The Mono-Tones (Deluxe)</p>
+                <p class="pieces">Кол-во: 
+                    <button class="minus">−</button>
+                    <span class="quantity">1</span>
+                    <button class="plus">+</button>
+                </p>
+            </div>
+            <p class="price" data-price="40.00">$40.00</p>
+        </div>
+
+        <!-- Третий альбом -->
+        <div class="cart-item">
+            <img src="./image 3.png" alt="Album 3">
+            <div class="item-info">
+                <p class="title">Thank You</p>
+                <p class="pieces">Кол-во: 
+                    <button class="minus">−</button>
+                    <span class="quantity">1</span>
+                    <button class="plus">+</button>
+                </p>
+            </div>
+            <p class="price" data-price="35.00">$35.00</p>
+        </div>
+
+        <hr>
+
+        <!-- Итого -->
+        <div class="summary">
+            <p>Delivery Amount <span id="delivery">$25.50</span></p>
+            <p><strong>Total Amount</strong> <strong id="total">$0.00</strong></p>
+            <button id="payment-btn">Make Payment →</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
