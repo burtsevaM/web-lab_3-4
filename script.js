@@ -1,3 +1,5 @@
+// Сделан pull request для проверки лабораторной работы №4
+
 document.addEventListener("DOMContentLoaded", () => {
     // главная INDEX
     //анимация появления страницы 
