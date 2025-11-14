@@ -377,6 +377,7 @@ button.minus:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
+/* анимация плавного появления сверху */
 @keyframes fadeInDown {
   from {
     opacity: 0;
@@ -388,6 +389,7 @@ button.minus:hover {
   }
 }
 
+/*  анимация плавного появления снизу */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -399,6 +401,7 @@ button.minus:hover {
   }
 }
 
+/* анимация плавного появления текста на странице */
 @keyframes textAppear {
   from {
     opacity: 0;
@@ -408,6 +411,7 @@ button.minus:hover {
   }
 }
 
+/* анимация пианино */
 @keyframes slideKeys {
   from {
     transform: translateY(0);
@@ -417,7 +421,7 @@ button.minus:hover {
   }
 }
 
-
+/* чтобы лучше смотрелось на телефонах и устройствах где ширина меньше 900 */
 @media (max-width: 900px) {
   .info-container {
     flex-direction: column;
